@@ -16,6 +16,8 @@ public class Main {
 
             LinkedList<Two> linkedListA = new LinkedList<>(arrayListA);
             LinkedList<Two> linkedListB = new LinkedList<>(arrayListB);
+            Collections.sort(linkedListA);
+            Collections.sort(linkedListB);
             List<Triple> resultLinkedList = InnerJoin.IJoinLinkedList(linkedListA, linkedListB);
             resultLinkedList.forEach(triple -> System.out.println(triple));
 
